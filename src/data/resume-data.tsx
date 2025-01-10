@@ -9,190 +9,102 @@ import {
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "João P. Gebara",
+  initials: "JG",
+  location: "Salto, São Paulo, Brazil.",
+  locationLink: "https://www.google.com.br/maps/place/Salto,+SP/",
   about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+    "Ciêntista da Computação em formação.",
   summary: (
     <>
-      Frontend-focused Full Stack Engineer specializing in high-performance
-      React applications, scalable Node.js services, and real-time collaboration
-      systems. Experienced in technical architecture design and remote team
-      leadership.
+      Desenvolvedor de software com experiência em desenvolvimento backend e frontend de aplicações web responsivas e Desktops.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://avatars.githubusercontent.com/u/73214418?v=4",
+  personalWebsiteUrl: "https://gebarito.github.io/",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "joaopedrogebara+githubio@gmail.com",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/Gebarito",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/joaogebara/",
         icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus Salto",
+      degree: "Bacharelado em ciência da computação",
+      start: "2022",
+      end: "Atualmente",
     },
   ],
   work: [
     {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
+      company: "Siemens Brasil",
+      link: "https://www.siemens.com/br/",
+      badges: ["Em Campo", "Embarcados", "Hardware"],
+      title: "Siemens PDT em Customer Service em suporte de campo",
       logo: ConsultlyLogo,
-      start: "2024",
+      start: null,
       end: null,
       description: (
         <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
+          Técnico em manutenção de sistemas de automação industrial e embarcados.
           <ul className="list-inside list-disc">
             <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
-            </li>
-            <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
-            </li>
-            <li>
-              Implementing system-wide monitoring and security improvements
+              ...
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
-      ],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
-      description: (
-        <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
-          <ul className="list-inside list-disc">
-            <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
-            </li>
-            <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
-            </li>
-            <li>
-              Open source contributions to Relay DevTools and React i18n tooling
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
-      description: (
-        <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
-          <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
+      company: "Chuva inc",
+      link: "https://chuva.net.br/",
+      badges: ["PHP", "TypeScript", "Angular", "Docker", "Git", "CI/CD"],
+      title: "Engenheiro de software",
       logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
+      start: "07/2024",
+      end: "12/2024",
+      description: (
+        <>
+          Desenvolvedor fullstack em aplicações de controle de eventos
+          universitarios.
+          <ul className="list-inside list-disc">
+            <li>
+              Desenvolvia a lógica de novas features e realizava manutenção de bugs
+              com a linguagem PHP e o framework Drupal.
+            </li>
+            <li>
+              Implementava a interface de úsuario com base em designs Figma utilizando Angular e Typescript.
+            </li>
+            <li>
+              Utilizava o banco de dados MySQL para armazenamento de dados.
+            </li>
+            <li>
+              Monitorava erros utilizando a plataforma Sentry.
+            </li>
+            <li>
+              Escrevia testes de regressão visual utilizando cypress.
+            </li>
+            <li>
+              Escrevia testes únitarios com PHPUnit e testes de aceitação com Gherkin e Cucumber.
+            </li>
+            <li>
+              Utilizava git para versionamento e docker para conteinerização. Além de uma pipeline de ci/cd com github actions.
+            </li>
+          </ul>
+        </>
+
+      )
     },
-  ],
-  skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
   ],
   projects: [
     {
