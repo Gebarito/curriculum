@@ -1,11 +1,3 @@
-import {
-  ClevertechLogo,
-  ConsultlyLogo,
-  JojoMobileLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-} from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
@@ -51,7 +43,7 @@ export const RESUME_DATA = {
       link: "https://www.siemens.com/br/",
       badges: ["Em Campo", "Embarcados", "Hardware"],
       title: "Siemens PDT em Customer Service em suporte de campo",
-      logo: ConsultlyLogo,
+      logo: null,
       start: null,
       end: null,
       description: (
@@ -59,7 +51,7 @@ export const RESUME_DATA = {
           Técnico em manutenção de sistemas de automação industrial e embarcados.
           <ul className="list-inside list-disc">
             <li>
-              ...
+              Realizo a manutenção de sistemas proprietários em clientes.
             </li>
           </ul>
         </>
@@ -70,7 +62,7 @@ export const RESUME_DATA = {
       link: "https://chuva.net.br/",
       badges: ["PHP", "TypeScript", "Angular", "Docker", "Git", "CI/CD"],
       title: "Engenheiro de software",
-      logo: NSNLogo,
+      logo: null,
       start: "07/2024",
       end: "12/2024",
       description: (
@@ -107,47 +99,6 @@ export const RESUME_DATA = {
     },
   ],
   projects: [
-    {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
-      description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Consultly",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
-      ],
-      description:
-        "Platform for online consultations with real-time video meetings and scheduling",
-      logo: ConsultlyLogo,
-      link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
-    },
-    {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
-      logo: MonitoLogo,
-      link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
-      },
-    },
+    {},
   ],
 } as const;

@@ -57,6 +57,7 @@ interface ProjectTagsProps {
  * Renders a list of technology tags used in the project
  */
 function ProjectTags({ tags }: ProjectTagsProps) {
+  if (!tags) return null;
   if (tags.length === 0) return null;
 
   return (
@@ -123,29 +124,30 @@ interface ProjectsProps {
  */
 export function Projects({ projects }: ProjectsProps) {
   return (
-    <Section className="print-force-new-page scroll-mb-16 print:space-y-4 print:pt-12">
-      <h2 className="text-xl font-bold" id="side-projects">
-        Side projects
-      </h2>
-      <div
-        className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
-        role="feed"
-        aria-labelledby="side-projects"
-      >
-        {projects.map((project) => (
-          <article
-            key={project.title}
-            className="h-full" // Added h-full here
-          >
-            <ProjectCard
-              title={project.title}
-              description={project.description}
-              tags={project.techStack}
-              link={"link" in project ? project.link.href : undefined}
-            />
-          </article>
-        ))}
-      </div>
-    </Section>
-  );
+  //   <Section className="print-force-new-page scroll-mb-16 print:space-y-4 print:pt-12">
+  //     <h2 className="text-xl font-bold" id="side-projects">
+  //       Side projects
+  //     </h2>
+  //     <div
+  //       className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
+  //       role="feed"
+  //       aria-labelledby="side-projects"
+  //     >
+  //       {projects.map((project) => (
+  //         <article
+  //           key={project.title}
+  //           className="h-full" // Added h-full here
+  //         >
+  //           <ProjectCard
+  //             title={project.title}
+  //             description={project.description}
+  //             tags={project.techStack}
+  //             link={"link" in project ? project.link.href : undefined}
+  //           />
+  //         </article>
+  //       ))}
+  //     </div>
+  //   </Section>
+  // 
+    null);
 }
