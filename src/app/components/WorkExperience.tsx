@@ -39,7 +39,7 @@ function BadgeList({ className, badges }: BadgeListProps) {
 }
 
 interface WorkPeriodProps {
-  start: WorkExperience["start"];
+  start?: WorkExperience["start"];
   end?: WorkExperience["end"];
 }
 
@@ -50,9 +50,9 @@ function WorkPeriod({ start, end }: WorkPeriodProps) {
   return (
     <div
       className="text-sm tabular-nums text-gray-500"
-      aria-label={`Employment period: ${start} to ${end ?? "Present"}`}
+      aria-label={`Employment period: ${start ?? " "} to ${end ?? "Atualmente"}`}
     >
-      {start} - {end ?? "Present"}
+      {start != null ? start + " - " : ""}{end ?? "Atualmente"}
     </div>
   );
 }
@@ -136,7 +136,7 @@ export function WorkExperience({ work }: WorkExperienceProps) {
   return (
     <Section>
       <h2 className="text-xl font-bold" id="work-experience">
-        Work Experience
+        Expêriencia
       </h2>
       <div className="space-y-4 print:space-y-0" role="feed" aria-labelledby="work-experience">
         {work.map((item) => (
