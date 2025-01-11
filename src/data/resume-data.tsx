@@ -16,6 +16,7 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "https://gebarito.github.io/",
   contact: {
     email: "joaopedrogebara+githubio@gmail.com",
+    tel: "+ 55 (11)",
     social: [
       {
         name: "GitHub",
