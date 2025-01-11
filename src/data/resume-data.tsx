@@ -100,7 +100,8 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    {},
+    "PHP",
+    "TypeScript",
   ],
   projects: [
     {},
