@@ -98,6 +98,9 @@ export const RESUME_DATA = {
       )
     },
   ],
+  skills: [
+    {},
+  ],
   projects: [
     {},
   ],
